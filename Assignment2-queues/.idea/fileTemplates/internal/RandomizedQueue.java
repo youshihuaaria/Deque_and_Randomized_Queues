@@ -29,6 +29,7 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
             throw new IllegalArgumentException();
         }
 
+        // instead of items.length / 2
         if (size >= items.length) {
             resize(items.length * 2);
         }
